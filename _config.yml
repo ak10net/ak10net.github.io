@@ -1,11 +1,11 @@
 # Site settings
 title:          Ankit's Blog
 description:    Personal blog
-baseurl:      ""
+baseurl:        ""
 url:            "https://ak10net.github.io"
 
 # Google Analytics
-google_analytics: UA—XXXXXXXX-X
+google_analytics: G-GXQMVJVCCB
 
 # Author
 author:
