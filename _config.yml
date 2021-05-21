@@ -1,7 +1,7 @@
 # Site settings
 title:          Ankit's Blog
 description:    "Personal blog"
-baseurl:      "/ak10net.github.io"
+baseurl:      "blog"
 url:            "ak10net.github.io"
 
 # Google Analytics
