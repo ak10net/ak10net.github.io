@@ -1,0 +1,29 @@
+## Apache Airflow: A short introduction
+
+#### What is Airflow ?
+It's a platform to programmatically author, schedule and monitor workflow or data pipelines
+
+#### What are workflows or data pipelines ?
+A sequence of tasks which can be scheduled or started by an event. In technical lingo it's DAG (Directed acyclic graph) which is composed of tasks that can be run sequentially and parallelly. 
+
+A typical workflow would look like this:
+`download_data -> send_to_processing -> monitor_processing -> generate_report -> send_email`
+
+A traditional ETL looks like this:
+`Database -> Cron job -> HDFS`
+This has some limitations such as cron interfaces are not uniform everywhere, integrations have to be build ground up, hard to monitor, loads of manual work.
+
+Why airflow is used instead of typical ETL?
+1. It handles failures better
+2. It monitor processes and logs features
+3. It Handle data and execution dependencies 
+4. It takes care of scalability
+5. It deploy new changes
+6. It can process historical data or backfill
+
+What does Airflow do ?
+1. It defines tasks and dependencies in python
+2. It takes care of executing, scheduling and distributing tasks across worker nodes
+3. Its logs runs data for monitoring
+4. It Offers useful UI
+5. It Provides integrations
