@@ -8,6 +8,8 @@ permalink: /collection/
 ### Here, i share things that i like
 
 **Books**
+
 **Blogs**
+
 **Articles**
 
