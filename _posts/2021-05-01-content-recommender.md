@@ -32,6 +32,8 @@ Here we will create item features from song lyrics and will try to recommned sim
 + Lyrics column contains lyrics as displayed on genius.com
 + We are going to clean the data set and extract new features before building recommender
 
+![Dataset](/assets/content_recommender2.png)
+
 Let's start with basic imports
 ```python
 from collections import Counter
