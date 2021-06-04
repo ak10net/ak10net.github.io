@@ -25,13 +25,12 @@ Here we will create item features from song lyrics and will try to recommned sim
 	+ The model can only make recommendations based on existing interests of the user. In other words, the model has limited ability to expand on the users' existing interests.
 
 ### About the dataset
-Dataset we are going to use is from [Genius.com](https://www.cs.cornell.edu/~arb/data/genius-expertise/)
-We will use `lyrics.jl` file from the download
-Dataset has 37K songs from 10K plus artists
-Dataset has two columns 'song' and 'lyrics'
-Song column contains artist name plus name of the song
-Lyrics column contains lyrics as displayed on genius.com
-We are going to clean the data set and extract new features before building recommender
++ Dataset we are going to use is from [Genius.com](https://www.cs.cornell.edu/~arb/data/genius-expertise/)
++ We will use `lyrics.jl` file from the download
++ Dataset has two columns 'song' and 'lyrics'
++ Song column contains artist name plus name of the song
++ Lyrics column contains lyrics as displayed on genius.com
++ We are going to clean the data set and extract new features before building recommender
 
 Let's start with basic imports
 ```python
