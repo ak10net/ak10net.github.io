@@ -6,11 +6,11 @@ tags: recommender content-based
 excerpt_separator: <!--more-->
 ---
 
-### We will try to recommend songs with similar lyrics<!--more-->
+## We will try to recommend songs with similar lyrics<!--more-->
 
 `If you love music this post is for you`
 
-#### What is content based filtering?
+## What is content based filtering?
 Content-based filtering uses item features to recommend other items similar to what the user likes, based on their previous actions or explicit feedback. 
 Here we will create item features from song lyrics and will try to recommned similar song to what user liked.
 
@@ -21,9 +21,10 @@ Here we will create item features from song lyrics and will try to recommned sim
 
 + Disadvantages of content based recommender
 	+ Since the feature representation of the items are hand-engineered to some extent, this technique requires a lot of domain knowledge. Therefore, the model can only be as good as the hand-engineered features.
+
 	+ The model can only make recommendations based on existing interests of the user. In other words, the model has limited ability to expand on the users' existing interests.
 
-#### About the dataset
+### About the dataset
 Dataset we are going to use is from [Genius.com](https://www.cs.cornell.edu/~arb/data/genius-expertise/)
 We will use `lyrics.jl` file from the download
 Dataset has 37K songs from 10K plus artists
@@ -101,7 +102,7 @@ sns.barplot(x='quantiles', y='count', data=song_len_df,   palette="Blues_d")
 plt.xticks(rotation=45)
 plt.show()
 ```
-![Song length distribution](/assets/content_recommender.png)
+![Song length distribution](/assets/content_recomender.png)
 
 In EDA we found out that datasets contains lot of songs of few artists and very few of some artist. At the same time dataset contains songs from 12K unique artists. We only want songs recommended from different artist. Thus dropping songs from same artists.
 ```python
