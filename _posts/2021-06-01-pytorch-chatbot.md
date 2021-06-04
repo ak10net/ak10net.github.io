@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Basic chatbot"
+title: "Deep learning Chatbot"
 author: "Ankit"
 tags: chatbot pytorch 
 excerpt_separator: <!--more-->
@@ -53,7 +53,7 @@ Let's get into code now:-
 
 ### What all do we need to build the chatbot?
 
-1. Intents file to train the pytorch classifier 'intents.json'
++ Intents file to train the pytorch classifier 'intents.json'
 
 This file host all the intents that we want classifier to train on
 ```json
@@ -76,7 +76,7 @@ This file host all the intents that we want classifier to train on
 }
 ```
 
-2. Text processing utility 'utils.py'
++ Text processing utility 'utils.py'
 
 Basic text processing pipeline
 ```python
@@ -103,7 +103,7 @@ def bag_of_words(tokenized_sentence, words):
     return bag
 ```
 
-3. Basic model 'model.py'
++ Basic model 'model.py'
 
 Vanilla torch model
 ```python
@@ -127,7 +127,7 @@ class NeuralNet(nn.Module):
         return out
 ```
 
-4. Training script 'train.py'
++ Training script 'train.py'
 
 Training script to train model on intents. To train the model run 'python train.py'
 that will save the model for later use in app
@@ -240,7 +240,7 @@ torch.save(data, FILE)
 print(f'training complete. file saved to {FILE}')
 ```
 
-5. Interface for interaction 'chat.py'
++ Interface for interaction 'chat.py'
 
 To play with the bot run 'python chat.py' and bot will open in browser.
 ```python
@@ -299,7 +299,7 @@ if __name__ == "__main__":
     app.run()
 ```
 
-6. HTML file under templates folder 'html.py'
++ HTML file under templates folder 'html.py'
 
 Basic HTML template to interact with the bot. It takes the user input and send to bot api endpoint for 
 intent prediction. Once bot predicts intent successfully, it responds with a prefixed response which gets
@@ -343,12 +343,15 @@ displayed in conversation window.
     </div>
 ```
 
-Voila! Here is your chatbot
+**Voila! Here is your chatbot**
+
 ![Chatbot](/assets/chatbot.png)
 
 
 Thanks to [python engineer](https://www.youtube.com/channel/UCbXgNpp0jedKWcQiULLbDTA)
-Lot of code and inspiration is borrowed from there.
+
+Please checkout his youtube series.
+
 
 
 
