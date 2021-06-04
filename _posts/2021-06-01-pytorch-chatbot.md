@@ -33,9 +33,9 @@ Let's get some theory out of the way
 
 ### Types of chatbot
 There are three types of chatbot
-	- FAQ bots that give fixed response or can query for user
-	- Flow based chatbot that can maintain state of conversation
-	- Open ended chatbot that exhibit certain levels of intelligence and can maintain conversations
++ FAQ bots that give fixed response or can query for user
++ Flow based chatbot that can maintain state of conversation
++ Open ended chatbot that exhibit certain levels of intelligence and can maintain conversations
 
 ![Types of chatbots](/assets/types_of_chatbot.png)
 
