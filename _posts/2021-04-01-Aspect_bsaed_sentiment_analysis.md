@@ -19,9 +19,8 @@ Aspects: the category, feature, or topic that is being talked about
 
 ### Why aspect based sentiment analysis?
 
-let’s assume you’re trying to classify a single yelp restaurant review into one of five aspects: food, service, price, ambience, or simply anecdotal/miscellaneous. You could label the entire review and say that it mentions both food and price. At this level, you would have the most information about the context to make an accurate prediction, but it may require extra steps if you wanted to find out which particular sentence or word is referring to the specific aspect. Also, a document that mostly talks about food with one brief mention of price would be categorized in the same group as one that mostly talks about price and very little of food. At the individual word level, you have the most specificity; maybe a person was dissatisfied particularly with the music, which would be a feature of ambience. However, you may lose the context around the word to really parse out the more accurate context in deriving the sentiment around the aspect.
+Let’s assume you’re trying to classify a single yelp restaurant review into one of five aspects: food, service, price, ambience, or simply anecdotal/miscellaneous. You could label the entire review and say that it mentions both food and price. At this level, you would have the most information about the context to make an accurate prediction, but it may require extra steps if you wanted to find out which particular sentence or word is referring to the specific aspect. Also, a document that mostly talks about food with one brief mention of price would be categorized in the same group as one that mostly talks about price and very little of food. At the individual word level, you have the most specificity; maybe a person was dissatisfied particularly with the music, which would be a feature of ambience. However, you may lose the context around the word to really parse out the more accurate context in deriving the sentiment around the aspect.
 
-Basic imports 
 ```python
 # Basic imports
 import numpy as np
@@ -124,7 +123,7 @@ df = df.drop(columns=['Summary', 'Text'], axis=1)
 ```
 Our dataset has sentiment and cleaned reviews.
 
-![png](/aasets/amazon_reviews.png)
+![png](/assets/amazon_reviews.png)
 
 Now we are going to extract aspect of the review using dependency parser and also we will extract words define sentiment for that aspect. With these descriptors we will predict sentiment of that aspect. Note sentiment of overall sentence and aspect may differ. We will see how much is the difference by looking at confusion matrix later on.
 ```python
