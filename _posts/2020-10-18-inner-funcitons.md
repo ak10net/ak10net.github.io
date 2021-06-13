@@ -2,7 +2,7 @@
 layout: post
 title: "Inner functions"
 author: "Ankit"
-tags: closures decorators functions
+tags: python
 excerpt_separator: <!--more-->
 ---
 

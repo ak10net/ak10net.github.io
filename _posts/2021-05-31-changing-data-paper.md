@@ -2,7 +2,7 @@
 layout: post
 title: "Change the world by changing data - Paper summary"
 author: "Ankit"
-tags: paper summary
+tags: paper
 excerpt_separator: <!--more-->
 ---
 

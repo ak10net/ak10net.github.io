@@ -2,7 +2,7 @@
 layout: post
 title: "Coal mines of India"
 author: "Ankit"
-tags: visualization
+tags: viz
 excerpt_separator: <!--more-->
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Aspect based sentiment analysis"
 author: "Ankit"
-tags: sentiment spacy aspect
+tags: sentiment spacy 
 excerpt_separator: <!--more-->
 ---
 ### Sentiment analysis with a flavour of aspect.<!--more-->

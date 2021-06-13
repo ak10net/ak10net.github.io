@@ -2,7 +2,7 @@
 layout: post
 title: "Content based song recommender"
 author: "Ankit"
-tags: recommender content-based
+tags: recommender
 excerpt_separator: <!--more-->
 ---
 
