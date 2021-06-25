@@ -7,9 +7,9 @@ excerpt_separator: <!--more-->
 ---
 ## In the series of blog post we will undertand and implement recommender system<!--more-->
 
-# Recommender system part one - Theory
+## Theory
 
-It's 2021. Let's see how much of my world is shaped by recommender system. When i wake up with my morning coffee i search google news and scroll down headlines and click which interest me. Over a period of time google news have atuned to my prefrences it knows what kind of news my interest me and it serves me thru recommendation system. If you know me, i love listening to music and love discovering new artists. Prior to spotify and youtube it was difficult to discover new music. Now, new music gets delivered to me thru excellent recommenders of spotify and youtube. I love reading books and generally rely on recommendations from people i think look up to in particular area of interest. I also like discovering good movies i usually go by imdb ratings and it's recommendation of similar movies. In short, Recommender system have lot of influence in my life. Also, they make lot of money for companies from increased sales, ctr, engagement etc.
+It's 2021. Let's see how much of our world is shaped by recommender system. When i wake up with my morning coffee i search google news and scroll down headlines and click which interest me. Over a period of time google news have atuned to my prefrences it knows what kind of news my interest me and it serves me thru recommendation system. If you know me, i love listening to music and love discovering new artists. Prior to spotify and youtube it was difficult to discover new music. Now, new music gets delivered to me thru excellent recommenders of spotify and youtube. I love reading books and generally rely on recommendations from people i think look up to in particular area of interest. I also like discovering good movies i usually go by imdb ratings and it's recommendation of similar movies. In short, Recommender system have lot of influence in my life. Also, they make lot of money for companies from increased sales, ctr, engagement etc.
 
 Although recommender systems talked above can get pretty complex. We will try to understand the essense of recommendation system. What they do, how they do in simplest way possible.
 
@@ -23,7 +23,7 @@ Although recommender systems talked above can get pretty complex. We will try to
 
 3. *Interactions* - We also need interactions of users and product it could be explcit interaction such as rating or implicit interaction such as purchase, view etc.
 
-## There can be several basis for recommendations
+## There can be several basis for recommendations:-
 
 1. *Frequency based recommendations* - Why not recommend top items to everyone think of it like youtube trending recommendations. Those are items that got most like / views in certain time period in particular geography so they are recommended to all.
 
@@ -36,8 +36,8 @@ Although recommender systems talked above can get pretty complex. We will try to
 There can be many more. All of the approaches have their own shortcomings. 
 
 Since lot of background calculations for recommender systems are done with similarity metrics
-It is good to know about them 
-Methods to calculate similarity
+It is good to know about them as distance measures have their own pros and cons. I will leave it
+to the reader to find out about them from the links below.
 1. [Jaccard distance](https://en.wikipedia.org/wiki/Jaccard_index)
 2. [Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance)
 3. [Cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity)
@@ -45,9 +45,9 @@ Methods to calculate similarity
 5. [Pearson correlation](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient)
 
 
-## Let's understand the types of recommender approaches
+## Let's understand the types of recommender systems 
 
-### Content based approach
+## Content Based
 - This approach is based on property or attribute of an item.
 - This appraoch doesn't need any data about other users, since the recommendations are specific to this user.This makes it easier to scale to a large number of users.
 - This approach can capture the specific interests of a user, and can recommend niche items that very few other users are interested in.
@@ -55,16 +55,16 @@ Methods to calculate similarity
 - This approach uses similarity between items to recommend items similar to what the user likes
 - Example - If user A watches two cute cat videos, then the system can recommend cute animal videos to that user.
 
-### Collaborative filtering approach
+## Collaborative Filtering
 - This approach is based solely on past user item interaction
 - This approach uses similarities between queries and items simultaneously to provide recommendations.This allows for serendipitous recommendations
 - If user A is similar to user B, and user B likes video 1, then the system can recommend video 1 to user A (even if user A hasn’t seen any videos similar to video 1).
 - In this approach no domain knowledge neccessary
 - Interactions could be Explicit and Implicit (ratings, watch time, click etc)
 
-*Can be Further divided into* 
+*Collaborative filtering approach can be Further divided into* 
 
-####  Memory based approach (KNN etc)
+###  Memory based approach (KNN etc)
 - This approach used KNN and such algorithms to find out nearest users ot items 
 - These do not suffer from cold start problem like model based approaches 
 - There are no latent models
@@ -73,21 +73,22 @@ Methods to calculate similarity
 - Time consuming for big systems
 
 *Memory based approach can be further divided into* 
-##### User-user type
+
+#### User-user type
 - This approach uses User features age, sex, location etc
 - It Identify user with most similar interaction profile using similarity metrics
 - Suggestion to a user would be average of interaction of its closest neighbors
 - In short this suggest items most popular among closes neighbors of user
 - This model has high variance and low bias
 
-##### Item-item type
+#### Item-item type
 - This approach uses item features type, category etc
 - Same as user-user but for item
 - Find similar items to the ones the user already positively intercted with in the past
 - Suggest K nearest neighbors to selected 'best item' that are new to our user
 - This model high bias and low variance
 	
-#### Model based approach
+### Model based approach
 - In this appraoch Recommendations are done following model information
 - This appraoch require no information about user and item
 - As more interactions happen more accurate recommendations becomes
@@ -96,12 +97,13 @@ Methods to calculate similarity
 - To calculate latent factors optmization algorithm such as SGD and ALS are used
 
 *Model based approach can be further divided into* 
-##### Matrix factorization (User-Item)
+
+#### Matrix factorization (User-Item)
 - Decompose huge and sparse matrix (m*n) into a product of two smaller and dense matrix a user-factor matrix (m*k) and a factor-item matrix (k*n)
 - Matrix factorization can be done with SVD, PCA,NMF etc
 - Uses gradient descent or alternating least square for matrix convergence
 
-##### Deep learning (User-Item)
+#### Deep learning (User-Item)
 - Deep learning based models can use side features that Matrix factorization cannot
 
 	
@@ -113,10 +115,10 @@ Going forward in this series we will try to build few recommender system based u
 
 
 Refrences:-
-[Mining of massive datasets](http://www.mmds.org/)
-[Google recommender crash course](https://developers.google.com/machine-learning/recommendation)
-[Introduction to recsys theory](https://towardsdatascience.com/introduction-to-recommender-systems-6c66cf15ada)
-[Excellent blog post](https://jessesw.com/Rec-System/)
-[Excellent blog post](https://datascienceplus.com/building-a-book-recommender-system-the-basics-knn-and-matrix-factorization/)
-[Package](https://github.com/benfred/implicit)
-[Cool blog post](https://www.benfrederickson.com/matrix-factorization/)
+- [Mining of massive datasets](http://www.mmds.org/)
+- [Google recommender crash course](https://developers.google.com/machine-learning/recommendation)
+- [Introduction to recsys theory](https://towardsdatascience.com/introduction-to-recommender-systems-6c66cf15ada)
+- [Excellent blog post](https://jessesw.com/Rec-System/)
+- [Excellent blog post](https://datascienceplus.com/building-a-book-recommender-system-the-basics-knn-and-matrix-factorization/)
+- [Package](https://github.com/benfred/implicit)
+- [Cool blog post](https://www.benfrederickson.com/matrix-factorization/)
