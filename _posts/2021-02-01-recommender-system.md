@@ -99,7 +99,7 @@ to the reader to find out about them from the links below.
 *Model based approach can be further divided into* 
 
 #### Matrix factorization (User-Item)
-- Decompose huge and sparse matrix (m*n) into a product of two smaller and dense matrix a user-factor matrix (m*k) and a factor-item matrix (k*n)
+- Decompose huge and sparse matrix (M x N) into a product of two smaller and dense matrix a user-factor matrix (M x K) and a factor-item matrix (K x N)
 - Matrix factorization can be done with SVD, PCA,NMF etc
 - Uses gradient descent or alternating least square for matrix convergence
 
@@ -118,7 +118,4 @@ Refrences:-
 - [Mining of massive datasets](http://www.mmds.org/)
 - [Google recommender crash course](https://developers.google.com/machine-learning/recommendation)
 - [Introduction to recsys theory](https://towardsdatascience.com/introduction-to-recommender-systems-6c66cf15ada)
-- [Excellent blog post](https://jessesw.com/Rec-System/)
-- [Excellent blog post](https://datascienceplus.com/building-a-book-recommender-system-the-basics-knn-and-matrix-factorization/)
-- [Package](https://github.com/benfred/implicit)
-- [Cool blog post](https://www.benfrederickson.com/matrix-factorization/)
+
