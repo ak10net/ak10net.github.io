@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Atomic habits summary"
+title: "Atomic habits"
 author: "Ankit"
 tags: book summary
 excerpt_separator: <!--more-->
