@@ -6,8 +6,7 @@ tags: book summary
 excerpt_separator: <!--more-->
 ---
 
-
-# Atomic Habits Summary
+# Summary notes from Atomic Habits<!--more-->
 
 ## Fundamentals
 Why does tiny change matter?

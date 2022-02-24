@@ -6,10 +6,7 @@ tags: book summary
 excerpt_separator: <!--more-->
 ---
 
-
-
-
-# The Psychology of Money summary
+# Summary notes from The Psychology of Money<!--more-->
 
 1. **No one is crazy**. Decisions related to money are situational dependent on the economy, inflation, personal wealth,
 risk. What might seem crazy to one might be normal to the other.
